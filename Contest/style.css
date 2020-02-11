@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Black+Ops+One|Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#1b1c1e;
+}
+
+
+.startup-page{
+    padding: 4rem;
+    max-width: 534px;
+    margin: auto;
+}
+
+.starter-text{
+    display: block;
+    font-size: 2em;
+    color: rgb(255, 201, 140);
+    opacity: 0;
+    letter-spacing: 6px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.starter-text__tab{
+    font-size: 1.2rem;
+}
+
+.starter-text:nth-of-type(1){
+    animation: fadeIn 2s forwards;
+}
+.starter-text:nth-of-type(2){
+    animation: fadeIn 2s 1s forwards;
+}
+.starter-text:nth-of-type(3){
+    animation: fadeIn 2s 2s forwards;
+}
+.starter-text:nth-of-type(4){
+    animation: fadeIn 2s 4s forwards;
+}
+
+
+@keyframes fadeIn{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.main-container{
+    padding: 1rem 0;
+    margin: auto;
+    font-family: 'Lato',sans-serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+}
+
+
+.heading-primary{
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 1;
+    color: #1ed5ad;
+    text-align: center;
+}
+
+.heading-primary--sup{
+    font-size: 1.3em;
+}
+
+.heading-primary--sub{
+  font-size: 1.6em;
+  letter-spacing: 10px;
+  display: block;
+}
+
+.heading-title{
+    color: #e4e4e4;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing:4px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+
+.clock{
+    background-color: rgba(97, 93, 93, 0.705);
+    background-image: linear-gradient(106deg,rgb(53, 52, 52) 50%,transparent 50%);
+    border-radius: 4px 4px 0 0;
+    text-transform: uppercase;
+    color: #fafafa;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.clock > *{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+.heading-seconday{
+    font-size:.6rem;
+    line-height: 1.5;
+}
+
+.heading-seconday--ls{
+    letter-spacing: 2px;
+}
+
+.Result-declare{
+    padding: 1rem;
+    background-color:#fafafa;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 2rem;
+}
+
+.text-bold{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder; 
+}
+
+.rules{
+    color: rgb(209, 206, 206);
+}
+
+.rules__list{
+    list-style: square;
+    padding-left: 1.2rem;
+}
+
+.rules__item{
+    padding: .5rem;
+}
+
+.heading-Tertiary{
+    color: #f6d849;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-family: 'Black Ops One', cursive;
+}
+
+.copy-right{
+    color: #fafafa;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #e7d88d;
+    margin-top: 1rem;
+}
